@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.card-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
