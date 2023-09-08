@@ -8,7 +8,7 @@ async function bootstrap() {
   app.enableCors(
     {
     allowedHeaders: [ 'content-type' ],
-		origin: 'https://memory-game-brascuba-smoky.vercel.app',
+		origin: 'https://memory-game-gamma-seven.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     }
