@@ -9,7 +9,6 @@ import { CardModule } from './card/card.module';
 
 @Module({
   imports: [
-
     ConfigModule.forRoot({
       isGlobal: true
     }),
