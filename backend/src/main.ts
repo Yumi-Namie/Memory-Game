@@ -9,11 +9,11 @@ async function bootstrap() {
 
     {
     allowedHeaders: [ 'content-type' ],
-		origin: 'https://memory-game-gamma-seven.vercel.app',
+		origin: 'https://memory-game-rmswweu7n-yumi-namie.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     }
-    
+
   );
   app.setGlobalPrefix('brascuba')
 
