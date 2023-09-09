@@ -45,9 +45,9 @@ export default function Game() {
   return (
     
     <div className="container ">
-      <section className="section w-[100%]  overflow-auto bg-cover bg-center flex justify-center items-start p-10" style={{ backgroundImage: themeBackgrounds[selectedTheme]}}>
+      <section className="section w-[100%]  overflow-auto bg-cover bg-center flex justify-center items-start py-10" style={{ backgroundImage: themeBackgrounds[selectedTheme]}}>
         <div data-testid="game-page" className="flex items-center justify-center flex-col py-20 px-2">
-          <div className="bg-white/95 backdrop-blur-sm w-[100%] h-full py-10 px-10 flex flex-col items-center justify-center rounded-lg">
+          <div className="bg-white/95 backdrop-blur-sm w-[100%] h-full py-10 px-4 flex flex-col items-center justify-center rounded-lg">
 
             <div className="w-[100%] flex flex-row justify-between items-center mb-2">
 
@@ -61,7 +61,7 @@ export default function Game() {
           
             </div>
 
-            <h1 className="lg:text-[50px] md:text-[40px] text-[30px] text-bcBlue">Memory Game</h1>
+            <h1 className="lg:text-[50px] md:text-[40px] text-[28px] text-bcBlue">Memory Game</h1>
             <GameBoard />
           </div>
         </div>
