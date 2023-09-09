@@ -8,7 +8,7 @@ async function bootstrap() {
   app.enableCors({
     allowedHeaders: ['content-type'],
     // origin: 'http://localhost:5173',
-    origin: 'http://memory-game-gamma-seven.vercel.app',
+    origin: 'https://memory-game-gamma-seven.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
