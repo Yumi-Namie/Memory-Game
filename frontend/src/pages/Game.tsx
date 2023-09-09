@@ -50,10 +50,10 @@ export default function Game() {
         <div data-testid="game-page" className="flex items-center justify-center flex-col p-20">
           <div className="bg-white/95 backdrop-blur-sm w-[100%] h-full py-10 px-16 flex flex-col items-center justify-center rounded-lg">
 
-            <div className="w-[100%] flex flex-row justify-between items-center mb-2 gap-28">
+            <div className="w-[100%] flex flex-row justify-between items-center mb-2">
 
-              <div className="user-info flex items-center gap-x-4">
-              <AvatarImg/>
+              <div className="user-info flex flex-col md:flex-row items-center gap-x-4">
+                <AvatarImg/>
                 <p>{gameContext.selectedUserName}</p>
               </div>
               <button className="settings-button flex" onClick={handleToggleSettings}>

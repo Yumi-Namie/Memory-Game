@@ -32,7 +32,7 @@ export const ResultModal: React.FC<ModalProps> = ({isOpen, clickCount, matchCoun
   return (
     isOpen && (
       <div className={modalClasses}>
-        <div className="bg-white w-[80%] h-[95%] p-4 rounded shadow-md">
+        <div className="bg-white w-[80%] p-4 rounded shadow-md">
           <div className="flex justify-end">
             <button className="top-2 right-2 text-gray-600" onClick={handleCloseModal}>
               <MdClose />
@@ -40,12 +40,12 @@ export const ResultModal: React.FC<ModalProps> = ({isOpen, clickCount, matchCoun
           </div>
           <div className="flex flex-col items-center justify-center h-full"> 
             <h2 className='text-4xl mb-4'>Congrats!</h2>
-            <img className='w-[60%] m-8' src={brainImgUrl} alt="Brain"/>
+            <img className='w-[40%] m-8' src={brainImgUrl} alt="Brain"/>
             <p>Clicks: {clickCount}</p>
             <p>Matches: {matchCount}</p>
             <button
               onClick={handleRestartClick}
-              className="bg-bcBlue text-white py-2 px-4 rounded-md hover:bg-bcBlue-dark transition duration-300 mt-10"
+              className="bg-bcBlue text-white py-2 px-4 rounded-md hover:bg-bcBlue-dark transition duration-300 m-10"
             >Restart
             </button>
           </div>

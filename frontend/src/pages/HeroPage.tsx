@@ -10,18 +10,18 @@ export function HeroPage() {
   return (
     <div
       data-testid="hero-page"
-      className="h-screen flex flex-col items-center justify-center bg-bcBlue p-20"
+      className="h-screen flex flex-col items-center justify-center bg-bcBlue p-10"
       style={{ backgroundImage: `url(${backgroundImageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
 
       <motion.div
-          className="rounded-2xl shadow-lg py-[90px] px-2 flex flex-col items-center justify-center" 
+          className="shadow-lg py-[60px] md:px-2 flex flex-col items-center justify-center" 
           style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }} 
-          initial={{ scale: 0.8, rotate: 0, borderRadius: "0%" }}
+          initial={{ scale: 0.8, rotate: 0}}
           animate={{
             scale: [0.8, 1.1, 1, 1],
             rotate: [0, 0, 0, 0],
-            borderRadius: ["25%", "25%", "25%", "25%"],
+            borderRadius: "10px"
           }}
           transition={{
             duration: 2,
@@ -31,11 +31,10 @@ export function HeroPage() {
         <div className="flex flex-col items-center justify-center">
           <motion.h1
             className="text-8xl text-gray font-bold mb-2 items-center justify-center"
-            initial={{ scale: 0.8, rotate: 0, borderRadius: "0%" }}
+            initial={{ scale: 0.8, rotate: 0}}
           animate={{
             scale: [0.8, 1.1, 1, 1],
             rotate: [0, 0, 0, 0],
-            borderRadius: ["25%", "25%", "25%", "25%"],
           }}
           transition={{
             duration: 2,
@@ -43,19 +42,22 @@ export function HeroPage() {
           }}
           >
             <div className="flex justify-center items-center">
-              <img src={brainImgUrl} alt="Brain" style={{ width: '40%' }} />
+              <img 
+                src={brainImgUrl}
+                alt="Brain"
+                className="img-fluid d-md-block d-sm-block mw-100"
+                style={{ width: '40%', maxWidth: '100%' }}
+              />
             </div>
-           
           </motion.h1>
-
-          
         </div>
+
         <motion.div
-        className="mt-20" 
-        initial={{ opacity: 0 }} 
+          className="mt-12" 
+          initial={{ opacity: 0 }} 
           animate={{ opacity: 1 }} 
           transition={{ duration: 1, ease: "easeInOut" }}
-        whileHover={{ scale: 1.2 }}
+          whileHover={{ scale: 1.2 }}
         >
           
           <Link
@@ -65,6 +67,7 @@ export function HeroPage() {
             Play
           </Link>
         </motion.div>
+
       </motion.div>  
     </div>
     
