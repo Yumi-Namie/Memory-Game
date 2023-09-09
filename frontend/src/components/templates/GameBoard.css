@@ -9,3 +9,38 @@
   flex-wrap: wrap;
   padding: 0;
 }
+
+/* GameBoard.css */
+.grid-cols-easy {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-medium {
+  grid-template-columns: repeat(8, 1fr); 
+}
+
+.grid-cols-hard {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media (max-width: 450px) {
+  .grid-cols-easy,
+  .grid-cols-medium,
+  .grid-cols-hard {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+@media (min-width: 451px) and (max-width: 1023px) {
+  .grid-cols-easy {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .grid-cols-medium {
+    grid-template-columns: repeat(6, 1fr); 
+  }
+  
+  .grid-cols-hard {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
