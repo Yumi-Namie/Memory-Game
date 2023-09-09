@@ -7,8 +7,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
     allowedHeaders: ['content-type'],
-    // origin: 'http://localhost:5173',
-    origin: 'https://memory-game-gamma-seven.vercel.app',
+    origin: 'http://localhost:5173',
+    // origin: 'https://memory-game-gamma-seven.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
