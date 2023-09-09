@@ -129,6 +129,19 @@ export default function GameBoard() {
     resetGame();
   }, [selectedTheme, selectedDifficulty]);
 
+  const getNumberOfColumns = () => {
+    switch (selectedDifficulty) {
+      case 'easy':
+        return 4; 
+      case 'medium':
+        return 6; 
+      case 'hard':
+        return 8; 
+      default:
+        return 4; 
+    }
+  };
+
 
   return (
     
@@ -138,7 +151,7 @@ export default function GameBoard() {
         </div>
 
         <div className="w-full flex justify-center items-center">
-          <ul className=" grid grid-cols-4 md:grid-cols-8 md:gap-2 ">
+          <ul className={`grid grid-cols-4 md:grid-cols-${getNumberOfColumns()} md:gap-2`}>
             {cards.map((card, index) => (
               <MemoryCard
                 key={index}
