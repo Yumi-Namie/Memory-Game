@@ -36,7 +36,6 @@ export default function Game() {
 
 
 
-
   const themeBackgrounds: { [key: string]: string } = {
     heroes: "url(https://res.cloudinary.com/dcwt8jbja/image/upload/v1692783278/MemoryGame/heroes/background_gu1jua.jpg)",
     food: "url(https://res.cloudinary.com/dcwt8jbja/image/upload/v1693158449/MemoryGame/Group_2_iu4ylw.png)"
@@ -47,8 +46,8 @@ export default function Game() {
     
     <div className="container ">
       <section className="section w-[100%]  overflow-auto bg-cover bg-center flex justify-center items-start p-10" style={{ backgroundImage: themeBackgrounds[selectedTheme]}}>
-        <div data-testid="game-page" className="flex items-center justify-center flex-col p-20">
-          <div className="bg-white/95 backdrop-blur-sm w-[100%] h-full py-10 px-16 flex flex-col items-center justify-center rounded-lg">
+        <div data-testid="game-page" className="flex items-center justify-center flex-col py-20 px-2">
+          <div className="bg-white/95 backdrop-blur-sm w-[100%] h-full py-10 px-10 flex flex-col items-center justify-center rounded-lg">
 
             <div className="w-[100%] flex flex-row justify-between items-center mb-2">
 
