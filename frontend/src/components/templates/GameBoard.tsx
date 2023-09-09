@@ -138,7 +138,7 @@ export default function GameBoard() {
         </div>
 
         <div className="w-full flex justify-center items-center">
-          <ul className=" grid grid-cols-4 md:gap-2 ">
+          <ul className=" grid grid-cols-4 md:grid-cols-8 md:gap-2 ">
             {cards.map((card, index) => (
               <MemoryCard
                 key={index}

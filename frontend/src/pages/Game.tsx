@@ -46,7 +46,7 @@ export default function Game() {
     
     <div className="container ">
       <section className="section w-[100%]  overflow-auto bg-cover bg-center flex justify-center items-start py-10" style={{ backgroundImage: themeBackgrounds[selectedTheme]}}>
-        <div data-testid="game-page" className="flex items-center justify-center flex-col py-20 px-2">
+        <div data-testid="game-page" className="flex items-center justify-center flex-col py-10 px-2">
           <div className="bg-white/95 backdrop-blur-sm w-[100%] h-full py-10 px-4 flex flex-col items-center justify-center rounded-lg">
 
             <div className="w-[100%] flex flex-row justify-between items-center mb-2">
